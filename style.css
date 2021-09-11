@@ -1,0 +1,59 @@
+
+
+/*tag styles*/
+body {
+  background-color: rgb(43, 46, 46);
+}
+h1 {
+  color: white;
+  text-align: center;
+}
+h2 {
+  color: white;
+  text-align: center;
+}
+h3 {
+  color: white;
+  text-align: center;
+}
+p{
+  color: white;
+}
+
+
+/*semantic styles*/
+header{
+  font-family: impact;
+}
+footer{
+  font-family: sans-serif;
+}
+main{
+  
+  font-family: 'Times New Roman', Times, serif;
+}
+nav{
+  font-family: impact;
+}
+
+/**/
+/* change unordered background color for every other */
+ul :nth-child(even) {
+  background: rgb(186, 249, 255);
+}
+
+/*table style*/
+table{
+  font-size: 1.5em;
+  font-family: serif;
+  color: fuchsia;
+}
+/*make odd rows light gray*/
+tr:nth-child(odd){
+  background-color: #c7c7c7;
+  }
+/*change table header color*/
+th{
+  color: white;
+  background-color: #000000;
+  }
