@@ -21,7 +21,7 @@ p{
 }
 
 
-/*semantic styles*/
+/*semantic tag styles*/
 header{
   font-family: impact;
 }
@@ -48,10 +48,17 @@ table{
   font-family: serif;
   color: fuchsia;
 }
+
 /*make odd rows light gray*/
 tr:nth-child(odd){
   background-color: #c7c7c7;
   }
+
+/*make even rows dark blue green*/
+tr:nth-child(even){
+  background-color: #1c5964;
+  }
+
 /*change table header color*/
 th{
   color: white;
