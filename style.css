@@ -1,66 +1,136 @@
 
+body{
+  margin: 0px;
+  background-color: rgb(46, 57, 151);
+}
+
+.wrapper {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4, [col] 25% ) ;
+    grid-template-rows: repeat(3, [row] auto  );
+    background-color: rgb(46, 57, 151);
+    width: 100%;
+  }
+
+  .box {
+    border-radius: 5px;
+    padding: 20px;
+    border-collapse: collapse;
+    background-color: rgb(158, 158, 158)
+  }
+
+  header {
+    grid-column: col / span 4 ;
+    grid-row: row ;
+    font-family: impact;
+  }
+
+  nav {
+    grid-column: col ;
+    grid-row: row 2 ;
+    font-family: impact;
+  }
+
+  nav a:link{
+    text-decoration: none;
+  }
+
+  nav ul{
+  list-style-type:none;
+ }
+
+  center{
+    grid-column: col 2 / span 2;
+    grid-row: row 2;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+  }
+
+  main {
+    grid-column: col 4 / span 2 ;
+    grid-row: row 2 ;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  footer {
+    grid-column: col / span 4;
+    grid-row: row 3;
+    font-family: sans-serif;
+  }
+
+
+  @media only screen and (max-width: 600px) {
+    nav{
+      grid-column: col / span all;
+      grid-row: row 2 ;
+    }
+    center{
+      grid-column: col / span all;
+      grid-row: row 3 ;
+    }
+    main{
+      grid-column: col / span all;
+      grid-row: row 4 ;
+    }
+    footer{
+      grid-column: col / span all;
+      grid-row: row 5 ;
+    }
+  }
+
+  .headerlogo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 45%;
+    height: auto;
+  }
 
 /*tag styles*/
-body {
-  background-color: rgb(43, 46, 46);
-}
 h1 {
-  color: white;
+  color: rgb(2, 2, 2);
   text-align: center;
 }
 h2 {
-  color: white;
+  color: rgb(0, 0, 0);
   text-align: center;
 }
 h3 {
-  color: white;
+  color: rgb(0, 0, 0);
   text-align: center;
 }
 p{
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 
-/*semantic tag styles*/
-header{
-  font-family: impact;
-}
-footer{
-  font-family: sans-serif;
-}
-main{
-  
-  font-family: 'Times New Roman', Times, serif;
-}
-nav{
-  font-family: impact;
-}
+
 
 /**/
 /* change unordered background color for every other */
-ul :nth-child(even) {
-  background: rgb(186, 249, 255);
+main ul :nth-child(even) {
+  background: rgb(108, 163, 168);
 }
 
 /*table style*/
-table{
+main table{
   font-size: 1.5em;
   font-family: serif;
-  color: fuchsia;
+  color: rgba(241, 227, 27, 0.966);
 }
 
 /*make odd rows light gray*/
-tr:nth-child(odd){
-  background-color: #c7c7c7;
+main tr:nth-child(odd){
+  background-color: #7c7c7c;
   }
 
 /*make even rows dark blue green*/
-tr:nth-child(even){
-  background-color: #1c5964;
+main tr:nth-child(even){
+  background-color: #0b3841;
   }
 
 /*change table header color*/
-th{
+main th{
   color: white;
   background-color: #000000;
   }

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Page 3</title>
+    
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+
+    <div class="wrapper">
+
+    <header class = "box header">
+      <img src="images/The header.png" alt="Header image" class="headerlogo">
+    </header>
+
+    <nav class = "box nav">
+    <ul>
+      <ul>
+      <li><a href="index.html">Home</a> </li>
+      <li><a href="page1.html">Page 1</a> </li>
+      <li><a href="page2.html">Page 2</a> </li>
+      <li><a href="page3.html">Page 3</a> </li>
+      <li><a href="https://www.columbusstate.edu/">CSU's Main Page</a> </li>
+    </ul>
+    </nav>
+
+    <center class = "box center">
+      <h3>Captain, What Is Our Heading?</h3>
+    </center>
+
+
+    <main class = "box main">
+      <form name="myForm" action="https://webdevbasics.net/scripts/yoga.php" method="POST" onsubmit="return validateForm()">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="First Name" placeholder="John" size="20" maxlength="50" required><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="Last Name" placeholder="Smith" size="20" maxlength="50" required>
+        
+        <br>
+        <br>
+        
+        <label for="email">Enter your email:</label><br>
+        <input type="email" id="email" name="email" placeholder="getanemail@hurryup.com" required>
+        
+        <br>
+        <br>
+
+         <label for="phone">Enter your phone number:</label><br>
+         <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="###-###-####" required>
+
+         <br>
+        <br>
+
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username" placeholder="UserN4me" required><br><br>
+        <label for="pwd">Password:</label><br>
+        <input type="password" id="pwd" name="pwd" placeholder="secretphrase123" required><br>
+        <label for="pwd_agn">Password Again:</label><br>
+        <input type="password" id="pwd_agn" name="pwd_agn" placeholder="secretphrase123" required>
+        
+        <br>
+        <br>
+
+        <label for="comments">Enter Comments Here:</label>
+        <textarea id="comments" name="Comments" rows="4" cols="50" placeholder="Did you know the mitochonrdia is your powerhouse?"></textarea>
+        
+        <br>
+        <br>
+
+        <input type="submit" value="Submit">
+        <input type="reset">
+      </form>
+    </main>
+
+    <footer class = "box footer">
+      <p>Michael Farmer <a href = "mailto: farmer_michael1@columbusstate.edu">farmer_michael1@columbusstate.edu</a>&copy;</p>
+      <p>Last modifed: <p><p id="date"></p>
+    </footer>
+
+    </div>
+    <script src="script.js"></script>
+  </body> 
+</html>
